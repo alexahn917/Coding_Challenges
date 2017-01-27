@@ -1,10 +1,13 @@
-package Palantir;
+package String;
 
 public class ZigZagStringConverter {
 	
 	public static String convert(String s, int numRows) {
 		char[] c = s.toCharArray();
 		int len = c.length;
+		if (len < 1){
+			return "";
+		}
 		StringBuffer[] sb = new StringBuffer[len];
 		for (int i=0; i<sb.length; i++) sb[i] = new StringBuffer();
 		int i = 0;
@@ -16,7 +19,7 @@ public class ZigZagStringConverter {
 				sb[index].append(c[i++]);
 			}
 		}
-		for (int j=0; j<sb.length; j++) {
+		for (int j=1; j<sb.length; j++) {
 			sb[0].append(sb[j]);
 		}
 		return sb[0].toString();
