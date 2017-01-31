@@ -2,7 +2,7 @@
 public int firstIndexOf(int[] nums, int start, int end, int target) {
 	if (start <= end) {
 		int mid = (start + end) / 2;
-		if ((mid == 0 || nums[mid-1] < target) && (nums[mid] == target)) {
+		if ((nums[mid] == target) && (mid == 0 || nums[mid-1] < target)) {
 			return mid;
 		}
 		else if (nums[mid] < target) {
@@ -18,7 +18,7 @@ public int firstIndexOf(int[] nums, int start, int end, int target) {
 public int lastIndexOf(int[] nums, int start, int end, int target) {
 	if (start <= end) {
 		int mid = (start + end) / 2;
-		if ((mid == nums.length-1 || nums[mid+1] > target) && (nums[mid] == target)) {
+		if ((nums[mid] == target) && (mid == nums.length-1 || nums[mid+1] > target)) {
 			return mid;
 		}
 		else if (nums[mid] < target) {
