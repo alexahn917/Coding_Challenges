@@ -1,0 +1,32 @@
+Prediction Model of SalesPrices for Housings.
+
+Usage:
+
+>> python run.py
+
+Return:
+
+>> output.csv
+
+
+The components of the script include 4 parts:
+
+1. Data clean up 
+	+ converting categorical variables to one-hot-vectors using dictVectorizer
+	+ separating observed / unobserved data points
+
+2. Data sampling (train vs. test sets)
+	+ randomization
+
+3. Basic model testing
+	+ Neural network, SVM regression (rbf kernel)
+	+ Chose NN for betting fittingness (R^2 values)
+
+4. Model selection
+	+ Hyper parameter tuning (# layers, alphas).
+	+ Chose best estimator with lowest loss (neg.mean.squared.error)
+
+
+If there is any question, please send me an email to alexahn@jhu.edu.
+
+Thank you.

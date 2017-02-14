@@ -1,0 +1,22 @@
+Challenge: Given the provided data set (found in 'data.csv') develop a predictive model that uses any subset of the provided features along with any new features you calculate to predict the variable 'SalePrice'. 
+
+Data: The data has 80 features including both categorical and continuous. A description of each feature in the data set can be found in 'data_description.txt'.
+
+What you should submit: 
+
+1) A commented script showing the work you did to prepare the data for analysis.
+
+2) A commented script showing your model selection and evaluation. 
+
+3) A csv file which is a duplicate of the original data.csv with a column named "PredictedValues" in which the predicted values from your final chosen model are saved. 
+
+4) A short summary in a text file (No more than 200 words) walking us through the basic decisions you made in designing your final model. Optionally may include one graph. 
+
+
+
+
+Notes: 
+- Feel free to use whatever language/tool you feel is most appropriate.
+- Within your chosen language feel free to make use of any external packages (glmnet, ggplot, pandas, numpy, sklearn etc).
+- Please provide comments so that someone reading your script would understand what you are doing and why.
+- Please don't hesitate to reach out if you have any questions requiring clarification.
