@@ -54,7 +54,22 @@ public class Tree {
 		if (root == null) return -1;
 		return 1+ Math.max(height(root.left), height(root.right));
 	}
-	
+
+    public List<String> binaryTreePaths() {
+        List<String> list = new ArrayList<>();
+        helper(root, "", list);
+        return list;
+    }
+    
+    public void helper(Node root, String s, List<String> list) {
+        if (root.left == null && root.right == null)
+        	list.add(s + root.data);
+        if (root.left != null)
+            helper(root.left, s + root.data + "->", list);
+        if (root.right != null)
+            helper(root.right, s + root.data + "->", list);
+    }
+    
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		Queue<Node> q = new LinkedList<>();

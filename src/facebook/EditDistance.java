@@ -1,7 +1,7 @@
 package facebook;
 
 public class EditDistance {
-		
+
 	public static void main(String[] args) {
 		String a = "Hello";
 		String b = "olleH";
@@ -17,11 +17,12 @@ public class EditDistance {
 		else if (s1.charAt(n-1) == s2.charAt(m-1)) {
 			return minOps(s1,s2,n-1,m-1);
 		}
+		
 		else {
 			return 1 + minOfThree(minOps(s1,s2, n-1, m-1),
 							minOps(s1,s2,n,m-1),
 							minOps(s1,s2,n-1,m-1));
-		}				
+		}
 	}
 
 	public static int minOpsOPT(String s1, String s2, int n, int m) {

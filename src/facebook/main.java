@@ -1,5 +1,7 @@
 package facebook;
 
+import java.util.*;
+
 public class main {
 	public static void main(String[] args) {
 		Tree tr = new Tree();
@@ -10,6 +12,10 @@ public class main {
 		tr.insert(0);
 		tr.insert(8);		
 		System.out.println(tr);
-		System.out.println(tr.getHeight());		
+		System.out.println(tr.getHeight());
+		List<String> list = tr.binaryTreePaths();
+		for (String s : list) {
+			System.out.println(s);
+		}
 	}
 }
