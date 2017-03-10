@@ -1,4 +1,6 @@
-package Palantir;
+package Class;
+
+
 import java.util.*;
 
 public class CryptAnalysisProblem {

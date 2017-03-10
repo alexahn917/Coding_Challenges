@@ -20,8 +20,7 @@ public class isPalindrom_ext {
 		String a = "A man, a Cave, palinddrome:d";
 		a = a.replaceAll("[^A-Za-z0-9]", "");
 		System.out.println(a);
-		p = Pattern.compile("A");
-		m = p.find(a);
-		System.out.println(m);
+		Pattern p = Pattern.compile("A");
+		System.out.println(p.matches("A", a));
 	}
 }

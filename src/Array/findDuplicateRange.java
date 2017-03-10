@@ -1,4 +1,4 @@
-package Palantir;
+package Array;
 
 public class findDuplicateRange {
 

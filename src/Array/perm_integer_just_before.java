@@ -1,7 +1,5 @@
 package Array;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
-
 public class perm_integer_just_before {
 	public static void main(String[] args) {
 		System.out.println(justSmaller(1432));

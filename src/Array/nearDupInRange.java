@@ -1,4 +1,5 @@
-package Palantir;
+package Array;
+
 
 import java.util.HashMap;
 

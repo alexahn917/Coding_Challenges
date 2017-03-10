@@ -22,17 +22,19 @@ public class reverse_linkedlist {
 	
 	public static void printReverseIter(Node root) {
 		if (root == null) return;
-		Node newHead = null;
+		Node temp;
+		Node new_head = null;
 		while (root != null) {
-			Node root_next = root.next;
-			root.next = newHead;
-			newHead = root;
-			root = root_next;
-		}					
-		while (newHead != null) {
-			System.out.print(newHead.data + ", ");
-			newHead = newHead.next;
-		}	
+			temp = root.next;
+			root.next = new_head;
+			new_head = root;
+			root = temp;
+		}
+		while (new_head != null) {
+			System.out.print(new_head + ", ");
+			new_head = new_head.next;
+		}
+		
 	}
 	
 	public static void main(String[] args) {

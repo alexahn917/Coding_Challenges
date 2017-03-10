@@ -1,3 +1,4 @@
+package Tree;
 
 public class InOrder {
 	void inOrder(Node root) {

@@ -1,4 +1,6 @@
-package Palantir;
+package Class;
+
+
 import java.util.HashMap;
 
 // Least Recently Used Cache

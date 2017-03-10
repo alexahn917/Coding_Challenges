@@ -3,7 +3,7 @@ package facebook;
 public class perms_subs {
 	
 	public static void main(String[] args) {
-		String str = "abcd";
+		String str = "abc";
 		gen_perms("",str);
 		System.out.println();
 		gen_subs("",str,0);
