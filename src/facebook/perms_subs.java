@@ -14,7 +14,7 @@ public class perms_subs {
 			System.out.print(prefix + ", ");
 		}
 		for (int i=0; i < str.length(); i++) {
-			gen_perms(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, str.length()));
+			gen_perms(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1));
 		}
 	}
 	
